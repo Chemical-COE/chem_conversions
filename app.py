@@ -49,7 +49,7 @@ st.success(f'You need **{grams:.4f} grams** of solute.')
 df = pd.DataFrame(results_dic)
 
 st.write('Download Your Report Below :D')
-st.dataframe(df)
+st.dataframe(df, index =  False)
 
 # Optional: Adds an actual CSV download button
 csv = df.to_csv(index=False).encode('utf-8')
