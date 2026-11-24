@@ -6,8 +6,7 @@ st.title('Welcome to the Chem Conversion App')
 st.write('For more information reach out or make requests to the author: cfirkins@amafca.org')
 
 st.info('Here we calculate the pH of a monoprotic weak Acid in Water')
-st.write('The pka of Formic acid is 3.75 g/mol')
-st.write('The molar mass mass of Formic acid is 46.03 g/mol')
+st.warning('Try Formic Acid Example: \n The pka of Formic acid is 3.75 \n The molar mass mass of Formic acid is 46.03 g/mol')
 
 chem_name = st.text_input(label = 'Input the Chemical Name')
 st.write(f'The entered Chemical is {chem_name}')
