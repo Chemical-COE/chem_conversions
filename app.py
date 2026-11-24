@@ -4,6 +4,7 @@ import numpy as np
 
 st.title('Welcome to the Chem Conversion App')
 st.write('For more information reach out or make requests to the author: cfirkins@amafca.org')
+st.write('Code for this app can be found at: https://github.com/chemical-coe/chem_conversions')
 
 st.info('Here we calculate the pH of a monoprotic weak Acid in Water')
 st.warning('Example: Formic Acid  \n The pka of Formic acid is 3.75  \n The molar mass mass of Formic acid is 46.03 g/mol')
