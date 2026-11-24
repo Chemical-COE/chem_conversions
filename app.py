@@ -11,16 +11,20 @@ st.warning('Example: Formic Acid  \n The pka of Formic acid is 3.75  \n The mola
 chem_name = st.text_input(label = 'Input the Chemical Name')
 st.write(f'The entered Chemical is {chem_name}')
 
-pka = st.number_input(label = 'Input the Pka')
+pka = st.number_input(label = 'Input the Pka', format="%.5f",
+    min_value=0.0)
 st.write(f'The entered pka is {pka}')
 
-molar_mass = st.number_input(label = 'Input the Molar Mass in grams per mol')
+molar_mass = st.number_input(label = 'Input the Molar Mass in grams per mol', format="%.5f" ,
+    min_value=0.0)
 st.write(f'The entered molar mass is {molar_mass} g/mol')       
 
-conc = st.number_input(label = 'Enter the desired pH ex 7.0')
+conc = st.number_input(label = 'Enter the desired pH ex 7.0', format="%.5f",
+    min_value=0.0)
 st.write(f'The target pH is {conc}')
 
-vol = st.number_input(label = 'Enter the volume of water in gallons')
+vol = st.number_input(label = 'Enter the volume of water in gallons', format="%.5f",
+    min_value=0.0)
 st.write(f'The target volume is {vol} gallons')
 
 vol_liters = vol * 3.78541
